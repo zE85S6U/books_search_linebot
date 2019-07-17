@@ -1,0 +1,9 @@
+{
+    "require": {
+        "rakuten-ws/rws-php-sdk": "1.*",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "6.5.*"
+    }
+}
