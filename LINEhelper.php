@@ -64,6 +64,11 @@ class LINE_helper
     return $messageData;
   }
 
+  // 友だち追加された時
+  public function follow() {
+    $messageData = ['type' => 'text', 'text' => 'Java Androidとかスペースでand検索出来るよ！'];
+    return $messageData;
+  }
   // 上記以外のデータタイプ
   public function undefinedType()
   {

@@ -19,6 +19,8 @@ if ($message->{"type"} == 'text') {
   $messageData = $line->trimSerchData($searchedData);
 } elseif ($message->{"type"} == 'sticker') {
   $messageData = $line->stickerType();
+} elseif ($message->{"type"} == 'sticker') {
+  $messageData = $line->follow();
 } else {
   $messageData = $line->undefinedType();
 }
