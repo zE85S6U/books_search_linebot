@@ -18,7 +18,7 @@ class LINE_helper
     } else {
       $messageData = [
         'type' => 'template',
-        'altText' => 'カルーセル',
+        'altText' => '見つかりました！',
         'template' => [
           'type' => 'carousel',
           'imageAspectRatio'  => 'rectangle',

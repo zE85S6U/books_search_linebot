@@ -19,7 +19,7 @@ if ($message->{"type"} == 'text') {
   $messageData = $line->trimSerchData($searchedData);
 } elseif ($message->{"type"} == 'sticker') {
   $messageData = $line->stickerType();
-} elseif ($message->{"type"} == 'sticker') {
+} elseif ($jsonObj->{"events"}[0]->{"type"} == 'follow') {
   $messageData = $line->follow();
 } else {
   $messageData = $line->undefinedType();
