@@ -1,9 +1,34 @@
-# 図書検索 LINEbot
 
-## 使い方
-### あらかじめ必要なもの
-1. git
-1. composer
-1. herokuアカウント
-1. LINE Developersアカウント
-1. Rakuten Developersアカウント
+# 図書検索 LINEbot
+LINEのトークに入力したキーワード対しておすすめの書籍を探します
+
+## Demo
+動作デモをgifで用意する 
+## あらかじめ必要なもの
+-  git
+-  composer
+-  HerokuアカウントとHelokuCLI
+-  LINE Developersアカウント
+-  Rakuten Developersアカウント
+
+## Usage
+1. プロジェクトをHerokuへデプロイしてURLをひかえる
+1. 作成したLINEボットのWebhook URLに上のURLを設定
+1. LINEアプリへのQRコードから友達登録
+1. キーワードをトークに送信
+
+## Install
+1. composer install  
+    ```
+    $ composer install
+    ```
+1. herokuの環境変数にトークン等を設定  
+    `$ heroku login`の後
+    ```
+    $ heroku config:set LINEBOT_CHANNEL_SECRET="Channel Secret"
+    $ heroku config:set LINEBOT_CHANNEL_TOKEN="アクセストークン"
+    $ heroku config:set RAKUTEN_APP_ID="アプリID/デベロッパーID"
+    $ heroku config:set RAKUTEN_AFF_ID="アフィリエイトID"
+    ```
+## Document
+[作った時のメモ](https://github.com/zE85S6U/books_search_linebot/blob/develop/memo/document.md)

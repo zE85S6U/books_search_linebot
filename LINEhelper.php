@@ -6,7 +6,7 @@ class LINE_helper
 
   public function __construct()
   {
-    $this->accessToken = getenv("CHANNEL_ACCESS_TOKEN");
+    $this->accessToken = getenv("LINEBOT_CHANNEL_TOKEN");
   }
 
   // 検索結果を整形

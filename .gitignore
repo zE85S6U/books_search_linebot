@@ -1,6 +1,5 @@
 # 反映しないフォルダ
 .vscode/
-memo/
 vendor/
 src/
 test/
