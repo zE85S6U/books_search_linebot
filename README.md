@@ -11,7 +11,7 @@ LINEのトークに入力したキーワードからおすすめの書籍を探�
 -  LINE Developersアカウント
 -  Rakuten Developersアカウント
 
-## Usage
+## 使い方
 1. プロジェクトをHerokuへデプロイしてそのURLをコピー
 1. 作成したLINEボットのWebhook URLに上のURLを設定
 1. LINEアプリへのQRコードから友達登録
@@ -35,10 +35,9 @@ LINEのトークに入力したキーワードからおすすめの書籍を探�
 
 ## Licence
 自由に改変して下さい。  
-I want it simple and permissive.  
 MIT Licence
 
 ## Author
 [zE85S6U](https://github.com/zE85S6U)  
-作ったLINEBotです、よかったら友達登録して下さい。  
+このレポジトリのコードで動いているLINEBotです、よかったら友達登録して下さい。  
 ![result](https://github.com/zE85S6U/books_search_linebot/blob/develop/document/image/qr_linebot.jpg)
