@@ -1,9 +1,9 @@
 
-# 図書検索 LINEbot
+# 図書検索 LINEBot
 LINEのトークに入力したキーワード対しておすすめの書籍を探します
 
 ## Demo
-動作デモをgifで用意する 
+![result](https://github.com/zE85S6U/books_search_linebot/blob/develop/document/image/bot_demo.gif)
 ## あらかじめ必要なもの
 -  git
 -  composer
@@ -23,7 +23,7 @@ LINEのトークに入力したキーワード対しておすすめの書籍を�
     $ composer install
     ```
 1. herokuの環境変数にトークン等を設定  
-    `$ heroku login`の後
+    $ heroku loginの後
     ```
     $ heroku config:set LINEBOT_CHANNEL_SECRET="Channel Secret"
     $ heroku config:set LINEBOT_CHANNEL_TOKEN="アクセストークン"
@@ -31,4 +31,8 @@ LINEのトークに入力したキーワード対しておすすめの書籍を�
     $ heroku config:set RAKUTEN_AFF_ID="アフィリエイトID"
     ```
 ## Document
-[作った時のメモ](https://github.com/zE85S6U/books_search_linebot/blob/develop/memo/document.md)
+[作った時のメモ](https://github.com/zE85S6U/books_search_linebot/blob/develop/document/document.md)
+
+## 情報
+自分のGithubアカウントへのリンク
+作ったLINEBotのQRコードをはる
