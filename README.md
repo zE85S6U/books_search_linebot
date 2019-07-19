@@ -41,4 +41,4 @@ MIT Licence
 ## Author
 [zE85S6U](https://github.com/zE85S6U)  
 作ったLINEBotです、よかったら友達登録して下さい。  
-![result](https://github.com/zE85S6U/books_search_linebot/blob/develop/document/image/qr_linebot.gif)
+![result](https://github.com/zE85S6U/books_search_linebot/blob/develop/document/image/qr_linebot.jpg)
