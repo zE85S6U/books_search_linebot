@@ -12,7 +12,7 @@ $replyToken = $jsonObj->{"events"}[0]->{"replyToken"};
 $raku = new Rakuten_helper();
 $line = new LINE_helper();
 
-// 
+// Botの処理
 if ($message->{"type"} == 'text') {
   $obj = $raku->serch($message);
   $searchedData = $raku->objToArray($obj);

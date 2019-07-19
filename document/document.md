@@ -59,11 +59,11 @@ $ git push heroku master
 ```
 設定の確認
 ```
-$heroku config
+$ heroku config
 ```
 アプリ一覧を確認
 ```
-heroku apps
+$ heroku apps
 ```
 
 #### タイムゾーンを日本に
@@ -83,7 +83,7 @@ TZ: Asia/Tokyo
 
 ## ローカルサーバで開発したい
 ### Apache
-Apacheの起動時に記述ミスがないか確認
+Apacheの設定に記述ミスがないか確認
 ```
 sudo apache2ctl configtest
 ```
@@ -101,7 +101,7 @@ $ vi /etc/apacheapache2.conf
 
 ```
 
-Apacheのphpのバージョンを変える
+ApacheのPHPのバージョンを変える
 ```
 # a2enconf php7.3
 # a2enmod php7.3
@@ -184,12 +184,12 @@ Visual Studio Codeのlaunch.jsonに追加
     }
 ```
 
-### Git
-[.gitignore の書き方](https://qiita.com/inabe49/items/16ee3d9d1ce68daa9fff)
-
 ### 参考にしたサイト
 - [PHP×LINE Messaging APIで作るチャットボット](https://qiita.com/ryo_hisano/items/da85ee205fb6c8fd3fee)  
 - [PHPで作成したLINEBOTをHerokuで動かしてみた](https://qiita.com/masaki-ogawa/items/2521d29c17eb8664cab8)  
 - [PHP+HerokuでLINE BOT作ってみた](https://qiita.com/ttskch/items/7c148fcc595cec4aa59a)  
 - [HerokuとPHPでLineのDB接続されたチャットボットを作る](https://note.mu/rik114/n/nee16388d0eaa)
+- [.gitignore の書き方](https://qiita.com/inabe49/items/16ee3d9d1ce68daa9fff)
 - [ffmpegで動画を綺麗なgifに変換するコツ](https://life.craftz.dog/entry/generating-a-beautiful-gif-from-a-video-with-ffmpeg)
+- [わかりやすいREADME.mdを書く](https://deeeet.com/writing/2014/07/31/readme/)
+

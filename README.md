@@ -1,6 +1,6 @@
 
 # 図書検索 LINEBot
-LINEのトークに入力したキーワード対しておすすめの書籍を探します
+LINEのトークに入力したキーワードからおすすめの書籍を探します
 
 ## Demo
 ![result](https://github.com/zE85S6U/books_search_linebot/blob/develop/document/image/bot_demo.gif)
@@ -12,7 +12,7 @@ LINEのトークに入力したキーワード対しておすすめの書籍を�
 -  Rakuten Developersアカウント
 
 ## Usage
-1. プロジェクトをHerokuへデプロイしてURLをひかえる
+1. プロジェクトをHerokuへデプロイしてそのURLをコピー
 1. 作成したLINEボットのWebhook URLに上のURLを設定
 1. LINEアプリへのQRコードから友達登録
 1. キーワードをトークに送信
@@ -33,6 +33,12 @@ LINEのトークに入力したキーワード対しておすすめの書籍を�
 ## Document
 [作った時のメモ](https://github.com/zE85S6U/books_search_linebot/blob/develop/document/document.md)
 
-## 情報
-自分のGithubアカウントへのリンク
-作ったLINEBotのQRコードをはる
+## Licence
+自由に改変して下さい。  
+I want it simple and permissive.  
+MIT Licence
+
+## Author
+[zE85S6U](https://github.com/zE85S6U)  
+作ったLINEBotです、よかったら友達登録して下さい。  
+![result](https://github.com/zE85S6U/books_search_linebot/blob/develop/document/image/qr_linebot.gif)
