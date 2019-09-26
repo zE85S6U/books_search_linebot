@@ -3,7 +3,7 @@
 LINEのトークに入力したキーワードからおすすめの書籍を探します
 
 ## Demo
-![result](https://github.com/zE85S6U/books_search_linebot/blob/develop/document/image/bot_demo.gif)
+![result](document/image/bot_demo.gif)
 ## あらかじめ必要なもの
 -  git
 -  composer
@@ -31,7 +31,7 @@ LINEのトークに入力したキーワードからおすすめの書籍を探�
     $ heroku config:set RAKUTEN_AFF_ID="アフィリエイトID"
     ```
 ## Document
-[作った時のメモ](https://github.com/zE85S6U/books_search_linebot/blob/develop/document/document.md)
+[作った時のメモ](document/document.md)
 
 ## Licence
 自由に改変して下さい。  
@@ -40,4 +40,4 @@ MIT Licence
 ## Author
 [zE85S6U](https://github.com/zE85S6U)  
 このレポジトリのコードで動いているLINEBotです、よかったら友達登録して下さい。  
-![result](https://github.com/zE85S6U/books_search_linebot/blob/develop/document/image/qr_linebot.jpg)
+![result](document/image/qr_linebot.jpg)
