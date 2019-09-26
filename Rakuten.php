@@ -51,13 +51,13 @@ class Rakuten extends RakutenRws_ApiResponse_AppRakutenResponse
         if ($obj->data['count'] != 0) {
             foreach ($obj as $item) {
                 $title = $item['title'];
-                $isbn  = $item['isbn'];
+                $isbn = $item['isbn'];
                 $mediumImageUrl = $item['largeImageUrl'];
-                $itemUrl  = $item['itemUrl'];
+                $itemUrl = $item['itemUrl'];
                 $itemCaption = $item['itemCaption'];
                 $formattingData[] = [
                     'title' => $title,
-                    'isbn'  => $isbn,
+                    'isbn' => $isbn,
                     'image' => $mediumImageUrl,
                     'itemUrl' => $itemUrl,
                     'itemCaption' => $itemCaption
@@ -67,7 +67,7 @@ class Rakuten extends RakutenRws_ApiResponse_AppRakutenResponse
             // 検索結果が0だった場合のダミー
             $formattingData[] = [
                 'title' => null,
-                'isbn'  => null,
+                'isbn' => null,
                 'image' => null,
                 'itemUrl' => null,
                 'itemCaption' => null
