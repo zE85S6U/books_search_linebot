@@ -44,7 +44,7 @@ booksGenreId = "001005"
 参考:[楽天ジャンルリスト(テーブルバージョン)](https://github.com/NoguHiro/hacky_and_rocky/wiki/)
 
 ### Heroku
-[Heroku](https://dashboard.heroku.com/apps)へアクセスしアカウント登録  
+[Heroku](https://dashboard.heroku.com)へアクセスしアカウント登録  
 [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) をインストール
 ```
 $ apt-get install -y heroku

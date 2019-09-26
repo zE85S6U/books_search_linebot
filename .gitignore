@@ -1,5 +1,4 @@
 # 反映しないフォルダ
 .vscode/
+.idea/
 vendor/
-src/
-test/
