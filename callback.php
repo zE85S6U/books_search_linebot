@@ -1,4 +1,6 @@
 <?php
+require_once 'Rakuten.php';
+require_once 'LINE.php';
 
 // POSTデータを読む
 $jsonString = file_get_contents('php://input');
