@@ -2,7 +2,7 @@
 // SDKを読み込み
 require __DIR__ . '/vendor/rakuten-ws/rws-php-sdk/autoload.php';
 
-class Rakuten_helper extends RakutenRws_ApiResponse_AppRakutenResponse
+class Rakuten extends RakutenRws_ApiResponse_AppRakutenResponse
 {
     private $raku_app_id = null;
     private $raku_aff_id = null;
@@ -19,7 +19,12 @@ class Rakuten_helper extends RakutenRws_ApiResponse_AppRakutenResponse
         $this->booksGenreId = '001005';     // 楽天ブックスジャンルID(パソコン・システム開発)
     }
 
-    public function serch($keyword)
+    /**
+     * 楽天bookサーチ
+     * @param $keyword
+     * @return mixed
+     */
+    public function search($keyword)
     {
         $client = new RakutenRws_Client();
         $client->setApplicationId($this->raku_app_id);
@@ -36,6 +41,11 @@ class Rakuten_helper extends RakutenRws_ApiResponse_AppRakutenResponse
         return $response;
     }
 
+    /**
+     * 検索結果を配列に変換する
+     * @param $obj
+     * @return array
+     */
     public function objToArray($obj)
     {
         if ($obj->data['count'] != 0) {
@@ -45,7 +55,7 @@ class Rakuten_helper extends RakutenRws_ApiResponse_AppRakutenResponse
                 $mediumImageUrl = $item['largeImageUrl'];
                 $itemUrl  = $item['itemUrl'];
                 $itemCaption = $item['itemCaption'];
-                $formating_data[] = [
+                $formattingData[] = [
                     'title' => $title,
                     'isbn'  => $isbn,
                     'image' => $mediumImageUrl,
@@ -55,7 +65,7 @@ class Rakuten_helper extends RakutenRws_ApiResponse_AppRakutenResponse
             }
         } else {
             // 検索結果が0だった場合のダミー
-            $formating_data[] = [
+            $formattingData[] = [
                 'title' => null,
                 'isbn'  => null,
                 'image' => null,
@@ -63,6 +73,6 @@ class Rakuten_helper extends RakutenRws_ApiResponse_AppRakutenResponse
                 'itemCaption' => null
             ];
         }
-        return $formating_data;
+        return $formattingData;
     }
 }

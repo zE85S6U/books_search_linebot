@@ -1,6 +1,4 @@
 <?php
-require_once './Rakutehelper.php';
-require_once './LINEhelper.php';
 
 // POSTデータを読む
 $jsonString  = file_get_contents('php://input');
@@ -9,14 +7,14 @@ $message = $jsonObj->{"events"}[0]->{"message"};
 $replyToken = $jsonObj->{"events"}[0]->{"replyToken"};
 
 // インスタンス化
-$raku = new Rakuten_helper();
-$line = new LINE_helper();
+$raku = new Rakuten();
+$line = new LINE();
 
 // Botの処理
 if ($message->{"type"} == 'text') {
-  $obj = $raku->serch($message);
+  $obj = $raku->search($message);
   $searchedData = $raku->objToArray($obj);
-  $messageData = $line->trimSerchData($searchedData);
+  $messageData = $line->trimSearchData($searchedData);
 } elseif ($message->{"type"} == 'sticker') {
   $messageData = $line->stickerType();
 } elseif ($jsonObj->{"events"}[0]->{"type"} == 'follow') {
