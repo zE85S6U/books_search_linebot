@@ -1,6 +1,6 @@
 <?php
 require_once 'Rakuten.php';
-require_once 'LINE.php';
+require_once 'Line.php';
 
 // POSTデータを読む
 $jsonString = file_get_contents('php://input');
@@ -10,7 +10,7 @@ $replyToken = $jsonObj->{"events"}[0]->{"replyToken"};
 
 // インスタンス化
 $raku = new Rakuten();
-$line = new LINE();
+$line = new Line();
 
 // Botの処理
 if ($message->{"type"} == 'text') {

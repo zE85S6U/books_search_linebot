@@ -1,6 +1,6 @@
 <?php
 
-class LINE
+class Line
 {
     private $accessToken = null;
 
@@ -16,6 +16,8 @@ class LINE
      */
     public function trimSearchData($formattingData)
     {
+        $columns = array();
+
         if (empty($formattingData[0]['isbn'])) {
             // 検索結果が0
             $messageData = ['type' => 'text', 'text' => "見つかりませんでした..."];
