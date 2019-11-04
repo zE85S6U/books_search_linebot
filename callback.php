@@ -1,6 +1,8 @@
 <?php
-require_once 'Rakuten.php';
-require_once 'Line.php';
+require_once "vendor/autoload.php";
+
+use App\Line\Line;
+use App\Rakuten\Rakuten;
 
 // POSTデータを読む
 $jsonString = file_get_contents('php://input');

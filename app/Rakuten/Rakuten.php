@@ -1,6 +1,11 @@
 <?php
+namespace App\Rakuten;
+
+require_once '../../vendor/rakuten-ws/rws-php-sdk/autoload.php';
+
 // SDKを読み込み
-require __DIR__ . '/vendor/rakuten-ws/rws-php-sdk/autoload.php';
+use RakutenRws_ApiResponse_AppRakutenResponse;
+use RakutenRws_Client;
 
 class Rakuten extends RakutenRws_ApiResponse_AppRakutenResponse
 {

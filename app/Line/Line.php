@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Line;
+
 class Line
 {
     private $accessToken = null;
