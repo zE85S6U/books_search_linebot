@@ -47,12 +47,13 @@ class Rakuten
 
     /**
      * 検索結果を配列に変換する
-     * @param $obj
+     * @param RakutenRws_ApiResponse_AppRakutenResponse $obj
      * @return array
      */
     public function objToArray(RakutenRws_ApiResponse_AppRakutenResponse $obj)
     {
-        if ($obj->data['count'] != 0) {
+        $data = $obj->getData();
+        if ($data['count'] != 0) {
             foreach ($obj as $item) {
                 $title = $item['title'];
                 $isbn = $item['isbn'];
