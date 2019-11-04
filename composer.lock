@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b21c363564cb3ec2533970ac86ede7f5",
+    "content-hash": "f479a286a483e2621d817ca9d2096f0b",
     "packages": [
         {
             "name": "rakuten-ws/rws-php-sdk",
@@ -67,7 +67,8 @@
     "prefer-lowest": false,
     "platform": {
         "ext-mbstring": "*",
-        "ext-json": "*"
+        "ext-json": "*",
+        "ext-curl": "*"
     },
     "platform-dev": []
 }

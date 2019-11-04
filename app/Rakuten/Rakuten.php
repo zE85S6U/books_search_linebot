@@ -1,13 +1,12 @@
 <?php
-namespace App\Rakuten;
 
-require_once '../../vendor/rakuten-ws/rws-php-sdk/autoload.php';
+namespace App\Rakuten;
 
 // SDKを読み込み
 use RakutenRws_ApiResponse_AppRakutenResponse;
 use RakutenRws_Client;
 
-class Rakuten extends RakutenRws_ApiResponse_AppRakutenResponse
+class Rakuten
 {
     private $raku_app_id = null;
     private $raku_aff_id = null;
@@ -51,7 +50,7 @@ class Rakuten extends RakutenRws_ApiResponse_AppRakutenResponse
      * @param $obj
      * @return array
      */
-    public function objToArray($obj)
+    public function objToArray(RakutenRws_ApiResponse_AppRakutenResponse $obj)
     {
         if ($obj->data['count'] != 0) {
             foreach ($obj as $item) {

@@ -2,7 +2,8 @@
   "require": {
     "rakuten-ws/rws-php-sdk": "1.*",
     "ext-mbstring": "*",
-    "ext-json": "*"
+    "ext-json": "*",
+    "ext-curl": "*"
   },
   "require-dev": {
   },

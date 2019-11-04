@@ -1,5 +1,5 @@
 <?php
-require_once "vendor/autoload.php";
+require_once 'vendor/autoload.php';
 
 use App\Line\Line;
 use App\Rakuten\Rakuten;
@@ -11,8 +11,9 @@ $message = $jsonObj->{"events"}[0]->{"message"};
 $replyToken = $jsonObj->{"events"}[0]->{"replyToken"};
 
 // インスタンス化
-$raku = new Rakuten();
 $line = new Line();
+$raku = new Rakuten();
+
 
 // Botの処理
 if ($message->{"type"} == 'text') {
