@@ -1,7 +1,7 @@
 <?php
 
 
-use App\Line\Line;
+use App\Utils\Line;
 use PHPUnit\Framework\TestCase;
 
 class LineTest extends TestCase
@@ -22,9 +22,9 @@ class LineTest extends TestCase
     {
         $expected = ['type' => 'text', 'text' => "見つかりませんでした..."];
 
-        $result = $this->line->trimSearchData($data);
+        $actual = $this->line->trimSearchData($data);
 
-        $this->assertSame($result, $expected);
+        $this->assertEquals($expected, $actual);
     }
 
     public function additionProvider()

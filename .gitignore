@@ -2,4 +2,6 @@
 .vscode/
 .idea/
 vendor/
+
+# 反映しないファイル
 .phpunit.result.cache

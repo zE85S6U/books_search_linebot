@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Rakuten;
+namespace App\Utils;
 
 // SDKを読み込み
 use RakutenRws_ApiResponse_AppRakutenResponse;

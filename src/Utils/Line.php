@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Line;
+namespace App\Utils;
 
 class Line
 {
