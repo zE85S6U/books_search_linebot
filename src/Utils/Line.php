@@ -16,7 +16,7 @@ class Line
      * @param $formattingData
      * @return array
      */
-    public function trimSearchData($formattingData)
+    public function trimSearchData($formattingData): array
     {
         $columns = array();
 
@@ -64,7 +64,7 @@ class Line
      * メッセージがスタンプ
      * @return array
      */
-    public function stickerType()
+    public function stickerType(): array
     {
         $stickerId = mt_rand(52002734, 52002770);
         $messageData = [
@@ -79,7 +79,7 @@ class Line
      * 友だち追加された時
      * @return array
      */
-    public function follow()
+    public function follow(): array
     {
         $messageData = ['type' => 'text', 'text' => 'Java Androidとかスペースでand検索出来るよ！'];
         return $messageData;
@@ -89,7 +89,7 @@ class Line
      * 上記以外のデータタイプ
      * @return array
      */
-    public function undefinedType()
+    public function undefinedType(): array
     {
         $messageData = ['type' => 'text', 'text' => 'ちょっとわからない...'];
         return $messageData;
@@ -101,7 +101,7 @@ class Line
      * @param $respondedData
      * @return array
      */
-    public function createResponseMessage($replyToken, $respondedData)
+    public function createResponseMessage($replyToken, $respondedData): array
     {
         return ['replyToken' => $replyToken, 'messages' => [$respondedData]];
     }
