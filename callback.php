@@ -14,12 +14,18 @@ $replyToken = $jsonObj->{"events"}[0]->{"replyToken"};
 $line = new Line();
 $raku = new Rakuten();
 
-
 // Botの処理
 if ($message->{"type"} == 'text') {
-    $obj = $raku->search($message);
-    $searchedData = $raku->objToArray($obj);
-    $messageData = $line->trimSearchData($searchedData);
+    if ($message->{"text"} == '登録') {
+        $messageData = $line->registerUser($jsonObj->{"events"}[0]->{"source"}->{"userId"});
+    } else if ($message->{"text"} == '削除') {
+        $messageData = $line->deleteUser($jsonObj->{"events"}[0]->{"source"}->{"userId"});
+    } else
+        {
+        $obj = $raku->search($message);
+        $searchedData = $raku->objToArray($obj);
+        $messageData = $line->trimSearchData($searchedData);
+    }
 } elseif ($message->{"type"} == 'sticker') {
     $messageData = $line->stickerType();
 } elseif ($jsonObj->{"events"}[0]->{"type"} == 'follow') {

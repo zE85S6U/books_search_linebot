@@ -35,4 +35,9 @@ class LineTest extends TestCase
             [1, 0, 1]
         ];
     }
+
+    public function test_signUp() {
+        $message = ['type' => 'text', 'text' => '登録します'];
+        $this->assertEquals($message, $message);
+    }
 }

@@ -1,9 +1,10 @@
 {
   "require": {
     "rakuten-ws/rws-php-sdk": "1.*",
-    "ext-mbstring": "*",
     "ext-json": "*",
-    "ext-curl": "*"
+    "ext-curl": "*",
+    "ext-mbstring": "*",
+    "ext-pdo": "*"
   },
   "require-dev": {
     "phpunit/phpunit": "^8.4"

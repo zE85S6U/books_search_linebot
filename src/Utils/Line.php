@@ -81,9 +81,36 @@ class Line
      */
     public function follow(): array
     {
-        $messageData = ['type' => 'text', 'text' => 'Java Androidとかスペースでand検索出来るよ！'];
+        $messageData = ['type' => 'text', 'text' => '単語と単語の間にスペースを入れるとand検索出来るよ！'];
         return $messageData;
     }
+
+    /**
+     * ユーザ登録をする時
+     * @param $user_id
+     * @return array
+     */
+    public function registerUser($user_id): array
+    {
+        $messageData = ['type' => 'text', 'text' => '登録します'];
+        $db = new DBconnect();
+        $db->registerUser($user_id);
+        return $messageData;
+    }
+
+    /**
+     * ユーザーを削除する時
+     * @param $user_id
+     * @return array
+     */
+    public function deleteUser($user_id): array
+    {
+        $messageData = ['type' => 'text', 'text' => '削除します'];
+        $db = new DBconnect();
+        $db->deleteUser($user_id);
+        return $messageData;
+    }
+
 
     /**
      * 上記以外のデータタイプ
