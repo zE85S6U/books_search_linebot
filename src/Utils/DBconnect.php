@@ -42,12 +42,11 @@ class DBconnect
     }
 
     // ユーザの情報をデータベースから削除
-    function deleteUser($userId)
+    public function deleteUser($userId)
     {
         $dbh = self::$db;
         $sql = 'delete from ' . self::TABLE_NAME . ' where user_id =?';
         $sth = $dbh->prepare($sql);
         $sth->execute(array($userId));
-
     }
 }
