@@ -86,6 +86,10 @@ class Line
     }
 
     /**
+     * TODO 別のクラスのインスタンスを毎回作のは良くない気がする
+     */
+
+    /**
      * ユーザ登録をする時
      * @param $user_id
      * @return array
