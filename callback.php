@@ -9,6 +9,7 @@ $jsonString = file_get_contents('php://input');
 $jsonObj = json_decode($jsonString);
 $message = $jsonObj->{"events"}[0]->{"message"};
 $replyToken = $jsonObj->{"events"}[0]->{"replyToken"};
+$userId = $jsonObj->{"events"}[0]->{"source"}->{"userId"};
 
 // インスタンス化
 $line = new Line();
@@ -17,9 +18,9 @@ $raku = new Rakuten();
 // Botの処理
 if ($message->{"type"} == 'text') {
     if ($message->{"text"} == '登録') {
-        $messageData = $line->registerUser($jsonObj->{"events"}[0]->{"source"}->{"userId"});
+        $messageData = $line->registerUser($userId);
     } else if ($message->{"text"} == '削除') {
-        $messageData = $line->deleteUser($jsonObj->{"events"}[0]->{"source"}->{"userId"});
+        $messageData = $line->deleteUser($userId);
     } else
         {
         $obj = $raku->search($message);
