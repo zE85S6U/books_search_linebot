@@ -38,7 +38,7 @@ class Rakuten
             array(
                 'hits' => $this->hits,
                 'sort' => $this->sort,
-                'keyword' => mb_convert_kana($keyword->{'text'}, 'as', 'UTF-8'),  // 全角英字とスペースを半角
+                'keyword' => mb_convert_kana(strval($keyword), 'as', 'UTF-8'),  // 全角英字とスペースを半角
                 'booksGenreId' => $this->booksGenreId
             )
         );
