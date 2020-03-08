@@ -25,10 +25,10 @@ class Rakuten
 
     /**
      * 楽天bookサーチ
-     * @param $keyword
+     * @param Messages $keyword
      * @return mixed
      */
-    public function search($keyword)
+    public function search(Messages $keyword)
     {
         $client = new RakutenRws_Client();
         $client->setApplicationId($this->raku_app_id);
